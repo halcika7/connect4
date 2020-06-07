@@ -1,6 +1,6 @@
 import { Game } from './game.js';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://connect4-halc.herokuapp.com/');
 
 const game = new Game(socket);
 
