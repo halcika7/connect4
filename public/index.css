@@ -1,0 +1,79 @@
+/* grid-template-columns: repeat( auto-fill, minmax(min(calc(180px + 12vmin), 100%), 1fr)); */
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.grid {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    background: rgb(232, 232, 232);
+    display: flex;
+    max-width: 600px;
+    padding: 5px 0;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.45);
+}
+
+.column {
+    background: #fff;
+    height: 70px;
+    width: 70px;
+    margin: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 3px 0px 8px rgb(0, 0, 0);
+}
+
+.column.next {
+    background: rgb(179, 178, 178);
+}
+
+.column.player-1 {
+    background: red;
+}
+
+.column.player-0 {
+    background: black;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+p {
+    text-align: center;
+}
